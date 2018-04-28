@@ -1,0 +1,37 @@
+<view class='section' bindtouchstart="touchStart" bindtouchend="touchEnd">
+  <view class='top-search'>
+    <view class="searchbg">
+      <input bindinput='Getsearch' class='searchinput' placeholder-class='line-heigt:80rpx' />
+      <icon type="search" name='search' size="24" class='icon-font' bindtap='SearchType' />
+    </view>
+  </view>
+  <!-- <view class='content'>
+    <view class='goodslist' wx:for='{{GoodsList}}'>
+      <view class='img'>
+        <image src='{{item.imgurl}}'></image>
+      </view>
+      <view class='goodsname'>
+        <view>产品名：{{item.Productname}}</view>
+        <view>剩余量：{{item.RemainNum}}</view>
+      </view>
+      <view class='date'>
+        <view>生成日期：{{item.DateOfProduced}}</view>
+        <view>到期日期：{{item.MaturityDate}}</view>
+      </view>
+    </view>
+  </view> -->
+  <view class='content'>
+    <view class='ProductList' wx:for='{{GoodsList}}'>
+      <view class='imgList'>
+        <image src='{{item.imgurl}}'></image>
+      </view>
+      <view class='date'>
+        <view class='tittname'>{{item.Productname}}</view>
+        <view class='aboutdate'>生产日期：{{item.DateOfProduced}}</view>
+        <view class='aboutdate'>保质期（至）：{{item.MaturityDate}}</view>
+        <view class='aboutdate'>净含量：{{item.weight}}</view>
+        <view class='remainnum'>库存数：{{item.RemainNum}}</view>
+      </view>
+    </view>
+  </view>
+</view>

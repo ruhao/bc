@@ -1,0 +1,103 @@
+.section {
+  background: #f0f0f0;
+  height: 100%;
+  background-size: cover;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.topname{
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: black;
+  text-align: center;
+  border-bottom:2px solid gray 
+}
+.ProductList{
+  border-bottom: 1px solid #eeeeee;
+  height: 260rpx;
+  font-size: 14px;
+  padding-left: 30rpx;
+  position: relative;
+  margin-top:0;
+  display: flex;
+}
+.imgList{
+  height: 200rpx;
+  width: 200rpx;
+  background: orange;
+  margin: 30rpx 30rpx 30rpx 40rpx;
+  border-radius: 8rpx;
+   overflow: hidden; 
+}
+.imgList image{
+  width: 100%;
+  height: 100%;
+}
+.date{
+  width: 500rpx;
+  margin-left: 40rpx;
+}
+.checkbox{
+  width: 50rpx;
+  padding-top: 100rpx;
+}
+.checkedboxsize{
+  width: 30rpx;
+  height: 30rpx;
+  position: relative;
+  right: 20rpx;
+}
+.tittname{
+  color: #e0b360;
+  margin-top: 30rpx;
+  font-size: 16px;
+}
+.aboutdate{
+  font-size: 24rpx;
+  color: #666333;
+  line-height: 40rpx;
+}
+.remainnum{
+  font-weight: 700;
+  font-size: 14px;
+  margin-top: 8rpx;
+  color: black;
+}
+.content{
+  overflow-y: scroll;
+}
+.searchbg{
+  border-radius: 20rpx;
+  position: relative;
+  z-index: 12;
+  background: white;
+  left: 75rpx;
+  display: flex;
+  height: 80rpx;
+  width: 600rpx;
+}
+.icon-font{
+  position:absolute;
+  border-bottom-right-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+  top:0;
+  right: 0;
+  background:gray;
+  height:60rpx;
+  width:80rpx;
+  color:white;
+  padding-top: 20rpx;
+  text-align: center;
+}
+.searchinput{
+  line-height: 80rpx;
+  padding-left: 20px;
+  padding-top: 15rpx;
+}
+.top-search{
+  margin-top: 20rpx;
+  height:100rpx;
+}
